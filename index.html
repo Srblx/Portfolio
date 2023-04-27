@@ -22,6 +22,15 @@
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
 
+  <script> // Vérifier si la clé "visited" existe dans le stockage local
+    if (!localStorage.getItem('visited')) {
+      // Si la clé "visited" n'existe pas, afficher la boîte de dialogue modale
+      alert("Ce site est en cours de développement. Merci de votre compréhension !");
+    
+      // Enregistrer la clé "visited" dans le stockage local pour indiquer que l'utilisateur a visité le site
+      localStorage.setItem('visited', true);
+    }
+    </Script>
 </head>
 
 <body>
@@ -268,7 +277,7 @@
               </div>
             </div>
           </div>
-          <div class="col-sm-3 col-lg-3">
+          <!-- <div class="col-sm-3 col-lg-3">
             <div class="counter-box pt-4 pt-md-0">
               <div class="counter-ico">
                 <span class="ico-circle"><i class="bi bi-people"></i></span>
@@ -288,11 +297,13 @@
                 <p data-purecounter-start="0" data-purecounter-end="1" data-purecounter-duration="1" class="counter purecounter"></p>
                 <span class="counter-text">RECOMPENSE</span>
               </div>
+            -->
             </div>
           </div>
         </div>
       </div>
-    </div><!-- End Counter Section -->
+    </div>
+    <!-- End Counter Section -->
 
     <!-- ======= Portfolio Section ======= -->
     <section id="work" class="portfolio-mf sect-pt4 route">
@@ -382,15 +393,15 @@
               </div>
             </div>
           </div>
-          <div class="col-md-4">
+          <!-- <div class="col-md-4">
             <div class="work-box">
-              <a href="assets/img/work-4.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox">
+              <a href="#" data-gallery="portfolioGallery" class="portfolio-lightbox">
                 <div class="work-img">
                   <img src="assets/img/work-4.jpg" alt="" class="img-fluid">
                 </div>
               </a>
               <div class="work-content">
-                <div class="row">
+                 <div class="row">
                   <div class="col-sm-8">
                     <h2 class="w-title">Qcm sur la programmation</h2>
                     <div class="w-more">
@@ -398,7 +409,7 @@
                     </div>
                   </div>
         </div>
-      </div>
+      </div> -->
     </section><!-- End Portfolio Section -->
 
     <!-- ======= Testimonials Section ======= -->
