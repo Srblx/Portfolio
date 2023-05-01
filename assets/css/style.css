@@ -1590,3 +1590,20 @@ footer .credits a {
   color: white !important;
   margin: 0;
 }
+
+.book {
+  width: 25px;
+  height: 25px;
+  display: flex;
+  margin: auto;
+  margin-right: 15px;
+  margin-left: 15px;
+}
+
+.stat {
+  width: 25px;
+  height: 25px;
+  display: flex;
+  margin: auto;
+  padding-top: 10px;
+}
