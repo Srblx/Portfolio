@@ -1,10 +1,6 @@
 <?php
 // Inclure le fichier de la bibliothèque PHP Email Form
-if( file_exists($php_email_form = '../assets/vendor/php-email-form/php-email-form.php' )) {
-  include( $php_email_form );
-} else {
-  die( 'Unable to load the "PHP Email Form" Library!');
-}
+require_once '../assets/vendor/php-email-form/php-email-form.php';
 
 // Créer une nouvelle instance de la classe PHP_Email_Form
 $contact = new PHP_Email_Form;
@@ -20,6 +16,10 @@ $contact->to = $receiving_email_address;
 $contact->from_name = $_POST['name'];
 $contact->from_email = $_POST['email'];
 $contact->subject = $_POST['subject'];
+$contact->message = $_POST['message'];
+
+// Envoyer l'e-mail et renvoyer une réponse au format JSON
+echo json_encode($contact->send());
 
 // Décommenter le code suivant si vous souhaitez utiliser SMTP pour envoyer des e-mails
 /*
@@ -31,12 +31,4 @@ $contact->smtp = array(
 );
 */
 
-// Ajouter chaque champ de formulaire à l'e-mail à envoyer
-$contact->add_message( $_POST['name'], 'Nom');
-$contact->add_message( $_POST['email'], 'Adresse e-mail');
-$contact->add_message( $_POST['subject'], 'Sujet');
-$contact->add_message( $_POST['message'], 'Message', 10);
-
-// Envoyer l'e-mail et renvoyer une réponse au format JSON
-echo $contact->send();
 ?>
