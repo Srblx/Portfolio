@@ -1607,3 +1607,14 @@ footer .credits a {
   margin: auto;
   padding-top: 10px;
 }
+
+.plan_site {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+}
+
+.liste_plan {
+  text-decoration: underline;
+}
