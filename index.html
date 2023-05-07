@@ -360,98 +360,141 @@
             </div>
           </div>
         </div>
-        <div class="row">
-          <div class="col-md-4">
-            <div class="work-box">
-              <a href="assets/img/portfoli_biblio.png" data-gallery="portfolioGallery" class="portfolio-lightbox">
-                <div class="work-img">
-                  <img src="assets/img/portfoli_biblio.png" alt="" class="img-fluid">
-                </div>
-              </a>
-              <div class="work-content">
-                <div class="row">
-                  <div class="col-sm-8">
-                    <h2 class="w-title">Bibliothèque en ligne</h2>
-                    <div class="w-more">
-                      <span class="w-ctegory">Web Design</span> / <span class="w-date">Mars 2023</span>
-                    </div>
+      <div class="row">
+        <div class="col-md-4">
+          <div class="work-box">
+            <a href="assets/img/portfoli_biblio.png" data-gallery="portfolioGallery" class="portfolio-lightbox">
+              <div class="work-img">
+                <img src="assets/img/portfoli_biblio.png" alt="" class="img-fluid">
+              </div>
+            </a>
+            <div class="work-content">
+              <div class="row">
+                <div class="col-sm-8">
+                  <h2 class="w-title">Bibliothèque en ligne</h2>
+                  <div class="w-more">
+                    <span class="w-ctegory">Web Design</span> / <span class="w-date">Mars 2023</span>
                   </div>
-                  <div class="col-sm-4">
-                    <div class="w-like">
-                      <a href="#"> <span class="bi bi-plus-circle"></span></a>
-                    </div>
+                </div>
+                <div class="col-sm-4">
+                  <div class="w-like">
+                    <span class="bi bi-plus-circle" onclick="openModal('myModal_biblio')"></span>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-          <div class="col-md-4">
-            <div class="work-box">
-              <a href="assets/img/portfolio_miramas.png" data-gallery="portfolioGallery" class="portfolio-lightbox">
-                <div class="work-img">
-                  <img src="assets/img/portfolio_miramas.png" alt="" class="img-fluid">
-                </div>
-              </a>
-              <div class="work-content">
-                <div class="row">
-                  <div class="col-sm-8">
-                    <h2 class="w-title">Les amis du vieux Miramas</h2>
-                    <div class="w-more">
-                      <span class="w-ctegory">Web Design</span> / <span class="w-date">Avril 2023</span>
-                    </div>
-                  </div>
-                  <div class="col-sm-4">
-                    <div class="w-like">
-                      <a href="#"> <span class="bi bi-plus-circle"></span></a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="work-box">
-              <a href="assets/img/work-3.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox">
-                <div class="work-img">
-                  <img src="assets/img/work-3.jpg" alt="" class="img-fluid">
-                </div>
-              </a>
-              <div class="work-content">
-                <div class="row">
-                  <div class="col-sm-8">
-                    <h2 class="w-title">PortFolio Personnel</h2>
-                    <div class="w-more">
-                      <span class="w-ctegory">Web Design</span> / <span class="w-date">Avril 2023</span>
-                    </div>
-                  </div>
-                  <div class="col-sm-4">
-                    <div class="w-like">
-                      <a href="#"> <span class="bi bi-plus-circle"></span></a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- <div class="col-md-4">
-            <div class="work-box">
-              <a href="#" data-gallery="portfolioGallery" class="portfolio-lightbox">
-                <div class="work-img">
-                  <img src="assets/img/work-4.jpg" alt="" class="img-fluid">
-                </div>
-              </a>
-              <div class="work-content">
-                 <div class="row">
-                  <div class="col-sm-8">
-                    <h2 class="w-title">Qcm sur la programmation</h2>
-                    <div class="w-more">
-                      <span class="w-ctegory">Web Design</span> / <span class="w-date">Mai/Juin 2023</span>
-                    </div>
-                  </div>
         </div>
-      </div> -->
+        <!-- Fenêtre modale -->
+        <div id="myModal_biblio" class="modal myModal_biblio">
+          <div class="modal-content">
+            <span class="close" onclick="closeModal('myModal_biblio')">&times;</span>
+            <h2>Bibliothèque en ligne</h2>
+            <p>En cours de déploiment...</p>
+            <a href="https://github.com/Srblx" class="link_code_source">Code source</a>
+          </div>
+        </div>
+      
+        <div class="col-md-4">
+          <div class="work-box">
+            <a href="assets/img/portfolio_miramas.png" data-gallery="portfolioGallery" class="portfolio-lightbox">
+              <div class="work-img">
+                <img src="assets/img/portfolio_miramas.png" alt="" class="img-fluid">
+              </div>
+            </a>
+            <div class="work-content">
+              <div class="row">
+                <div class="col-sm-8">
+                  <h2 class="w-title">Les amis du vieux Miramas</h2>
+                  <div class="w-more">
+                    <span class="w-ctegory">Web Design</span> / <span class="w-date">Avril 2023</span>
+                  </div>
+                </div>
+                <div class="col-sm-4">
+                  <div class="w-like">
+                    <span class="bi bi-plus-circle" onclick="openModal('myModal_miramas')"></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Fenêtre modale -->
+        <div id="myModal_miramas" class="modal myModal_miramas">
+          <div class="modal-content">
+            <span class="close" onclick="closeModal('myModal_miramas')">&times;</span>
+            <h2>Les amis du vieux Miramas</h2>
+            <p>Site en cour de déploiment...</p>
+            <a href="https://github.com/Srblx" class="link_code_source">Code source</a>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="work-box">
+            <a href="assets/img/work-3.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox">
+              <div class="work-img">
+                <img src="assets/img/work-3.jpg" alt="" class="img-fluid">
+              </div>
+            </a>
+            <div class="work-content">
+              <div class="row">
+                <div class="col-sm-8">
+                  <h2 class="w-title">PortFolio Personnel</h2>
+                  <div class="w-more">
+                    <span class="w-ctegory">Web Design</span> / <span class="w-date">Avril 2023</span>
+                  </div>
+                </div>
+                <div class="col-sm-4">
+                  <div class="w-like">
+                    <a href="#"> <span class="bi bi-plus-circle"></span></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="work-box">
+            <a href="assets/img/attribu_zombie.png" data-gallery="portfolioGallery" class="portfolio-lightbox">
+              <div class="work-img">
+                <img src="assets/img/attribu_zombie.png" alt="" class="img-fluid">
+              </div>
+            </a>
+            <div class="work-content">
+              <div class="row">
+                <div class="col-sm-8">
+                  <h2 class="w-title">Usine à Crypto Zombie</h2>
+                  <div class="w-more">
+                    <span class="w-ctegory">Smart Contract</span> / <span class="w-date">Avril 2023</span>
+                  </div>
+                </div>
+                <div class="col-sm-4">
+                  <div class="w-like">
+                    <span class="bi bi-plus-circle" onclick="openModal('myModal_zombie')"></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Fenêtre modale -->
+        <div id="myModal_zombie" class="modal myModal_zombie">
+          <div class="modal-content">
+            <span class="close" onclick="closeModal('myModal_zombie')">&times;</span>
+            <h2>Usine Crypto Zombie</h2>
+            <p>Dans le souci de garantir une expérience fluide et accessible à tous les joueurs, nous avons choisi de ne pas déployer le Smart Contract sur la blockchain publique en raison des frais associés aux transactions. Cependant, vous pouvez consulter le code source sur GitHub pour découvrir les mécanismes sous-jacents et les fonctionnalités passionnantes du jeu.</p>
+            <a href="https://github.com/Srblx/CryptoZombie" class="link_code_source">Code source</a>
+          </div>
+        </div>
+        
     </section><!-- End Portfolio Section -->
-
+    <!-- <img src="assets/img/generate.png" alt="" class="img-fluid portfolio-lightbox-gallery">
+<img src="assets/img/generate2.png" alt="" class="img-fluid portfolio-lightbox-gallery">
+<img src="assets/img/nourrire_zombie.png" alt="" class="img-fluid portfolio-lightbox-gallery">
+<img src="assets/img/resultat_repas.png" alt="" class="img-fluid portfolio-lightbox-gallery">
+<img src="assets/img/combat_zombie.png" alt="" class="img-fluid portfolio-lightbox-gallery">
+<img src="assets/img/resultat_combat1.png" alt="" class="img-fluid portfolio-lightbox-gallery">
+<img src="assets/img/resultat_combat2.png" alt="" class="img-fluid portfolio-lightbox-gallery">
+<img src="assets/img/deck.png" alt="" class="img-fluid portfolio-lightbox-gallery"> -->
     <!-- ======= Testimonials Section ======= -->
     <div class="testimonials paralax-mf bg-image" style="background-image: url(assets/img/overlay-bg.jpg)">
       <div class="overlay-mf"></div>
@@ -708,6 +751,17 @@
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
 
+  <script>
+    // Attendez que la page soit complètement chargée
+    window.addEventListener('load', function() {
+      // Initialisez Lightbox2
+      lightbox.init();
+  
+      // Vous pouvez également personnaliser les options de Lightbox2 en utilisant l'objet "options"
+      // Par exemple, pour modifier la marge autour de l'image en grand, vous pouvez utiliser :
+      // lightbox.options.margin = 50;
+    });
+  </script>
 </body>
 
 </html>

@@ -228,13 +228,24 @@
 })()
 
 // Obtenir la hauteur de la page
-var body = document.body,
+let body = document.body,
     html = document.documentElement;
-var height = Math.max( body.scrollHeight, body.offsetHeight, 
+let height = Math.max( body.scrollHeight, body.offsetHeight, 
                        html.clientHeight, html.scrollHeight, html.offsetHeight );
 
-// Obtenir la position actuelle de la barre de défilement et mettre à jour la largeur de la barre de progression
-window.onscroll = function() {
-  var scrolled = (window.pageYOffset / height) * 100;
-  document.getElementById("myBar").style.width = scrolled + "%";
-};
+
+// Fonction pour ouvrir la fenêtre modale
+function openModal(modalClass) {
+  let modalElements = document.getElementsByClassName(modalClass);
+  for (let i = 0; i < modalElements.length; i++) {
+    modalElements[i].style.display = "block";
+  }
+}
+
+// Fonction pour fermer la fenêtre modale
+function closeModal(modalClass) {
+  let modalElements = document.getElementsByClassName(modalClass);
+  for (let i = 0; i < modalElements.length; i++) {
+    modalElements[i].style.display = "none";
+  }
+}
