@@ -6,7 +6,16 @@
  * 
  * Class PHP_Email_Form
  */
-error_reporting(0);
+
+ use PHPMailer\PHPMailer\PHPMailer;
+ use PHPMailer\PHPMailer\Exception;
+ use PHPMailer\PHPMailer\SMTP;
+ 
+ include '../Php_Mailer/Exception.php';
+ include '../Php_Mailer/PHPMailer.php';
+ include '../Php_Mailer/SMTP.php';
+
+// error_reporting(0);
 class PHP_Email_Form {
 
   public $to;
