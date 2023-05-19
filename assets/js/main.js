@@ -249,3 +249,25 @@ function closeModal(modalClass) {
     modalElements[i].style.display = "none";
   }
 }
+
+// Progression du scroll de la page 
+window.addEventListener('scroll', function() {
+  // Récupération de la hauteur totale de la page
+  var windowHeight = window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight;
+  var documentHeight = Math.max(document.body.scrollHeight,
+   document.documentElement.scrollHeight,
+    document.body.offsetHeight,
+     document.documentElement.offsetHeight,
+      document.body.clientHeight,
+       document.documentElement.clientHeight
+       );
+
+  // Récupération de la position de défilement verticale
+  var scrollTop = window.pageYOffset || (document.documentElement || document.body.parentNode || document.body).scrollTop;
+
+  // Calcul du pourcentage de défilement
+  var scrollPercentage = (scrollTop / (documentHeight - windowHeight)) * 100;
+
+  // Mise à jour de la largeur de la barre de progression
+  document.getElementById('myBar').style.width = scrollPercentage + '%';
+});

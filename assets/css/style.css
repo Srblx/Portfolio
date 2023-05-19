@@ -1559,7 +1559,7 @@ footer .credits a {
 
 /* Hover sur le bouton de défilement */
 ::-webkit-scrollbar-thumb:hover {
-  background-color: #555555;
+  background-color: #ffbc75;
 }
 
 .progress-container {
