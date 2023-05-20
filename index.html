@@ -748,6 +748,9 @@
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
 
+  <!-- EmailJs.com -->
+  <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+
   <script>
     // Attendez que la page soit complètement chargée
     window.addEventListener('load', function() {
@@ -758,6 +761,33 @@
       // Par exemple, pour modifier la marge autour de l'image en grand, vous pouvez utiliser :
       // lightbox.options.margin = 50;
     });
+  </script>
+  <script>
+   (function() {
+  emailjs.init("NesU771ELWdxdITMM");
+
+  let contactForm = document.getElementById('contact-form');
+  contactForm.addEventListener('submit', function(event) {
+    event.preventDefault();
+    
+    this.querySelector('.loading').classList.add('d-block');
+    this.querySelector('.error-message').classList.remove('d-block');
+    this.querySelector('.sent-message').classList.remove('d-block');
+    
+    emailjs.sendForm("service_0nxnvth", "template_e1bckh6", this)
+      .then(function(response) {
+        console.log('SUCCESS!', response);
+        contactForm.querySelector('.loading').classList.remove('d-block');
+        contactForm.querySelector('.sent-message').classList.add('d-block');
+        contactForm.reset();
+      }, function(error) {
+        console.log('FAILED...', error);
+        contactForm.querySelector('.loading').classList.remove('d-block');
+        contactForm.querySelector('.error-message').innerHTML = error;
+        contactForm.querySelector('.error-message').classList.add('d-block');
+      });
+  });
+})();
   </script>
 </body>
 
