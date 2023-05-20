@@ -141,7 +141,7 @@ a:hover {
   font-weight: 600;
   color: #1e1e1e;
   font-size: 1.1rem;
-  text-align: center;
+  /* text-align: center; */
 }
 
 /*--/ Title A /--*/
@@ -179,7 +179,7 @@ a:hover {
 .title-left {
   font-size: 2rem;
   position: relative;
- 
+  text-align: center;
 }
 
 .title-left:before {
@@ -837,6 +837,7 @@ a:hover {
 .about-mf .about-img img {
   margin-left: 10px;
 }
+
 
 @media (min-width: 767px) {
   .about-mf .box-pl2 {
@@ -1579,6 +1580,10 @@ footer .credits a {
 }
 
 .typed-cursor {
+  color: #ffffff;
+}
+
+.typed {
   color: #ffbc75;
 }
 
@@ -1658,4 +1663,29 @@ footer .credits a {
 .link_code_source {
   text-decoration: underline;
   color: #298eff;
+}
+
+.blockchain{
+  margin-bottom: 37px;
+}
+
+.bi-person-circle,
+.bi-journal-code,
+.bi-envelope-at,
+.bi-telephone-fill {
+  color: #0078ff;
+}
+
+.bi-geo-alt-fill {
+  color: #ff3737;
+}
+
+.titre_skills {
+  color: #0078ff;
+  font-size: 2rem;
+  margin: 0;
+  border: solid 6px #FABC76;
+  border-radius: 10px;
+  box-shadow: 2px 3px 2px 0px grey;
+  text-align: center;
 }
