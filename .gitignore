@@ -1,0 +1,18 @@
+# Ignorer le dossier "build" et son contenu
+# /build/
+
+# # Ignorer tous les fichiers avec l'extension ".log" dans le dossier "logs"
+# /logs/*.log
+
+# # Ignorer tous les fichiers dans le dossier "temp" et ses sous-répertoires
+# /temp/**
+
+# # Ignorer un fichier spécifique
+# /config.ini
+
+# # Ignorer tous les fichiers avec l'extension ".tmp" dans tous les dossiers
+# *.tmp
+
+
+portfolio-details.html
+form/
