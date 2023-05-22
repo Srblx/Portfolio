@@ -271,3 +271,46 @@ window.addEventListener('scroll', function() {
   // Mise à jour de la largeur de la barre de progression
   document.getElementById('myBar').style.width = scrollPercentage + '%';
 });
+
+
+// (function() {
+//   emailjs.init("NesU771ELWdxdITMM");
+
+//   let contactForm = document.getElementById('contact-form');
+//   contactForm.addEventListener('submit', function(event) {
+//     event.preventDefault();
+    
+//     this.querySelector('.loading').classList.add('d-block');
+//     this.querySelector('.error-message').classList.remove('d-block');
+//     this.querySelector('.sent-message').classList.remove('d-block');
+    
+//     emailjs.sendForm("service_0nxnvth", "template_e1bckh6", this)
+//       .then(function(response) {
+//         console.log('SUCCESS!', response);
+//         contactForm.querySelector('.loading').classList.remove('d-block');
+//         contactForm.querySelector('.sent-message').classList.add('d-block');
+//         contactForm.reset();
+//       }, function(error) {
+//         console.log('FAILED...', error);
+//         contactForm.querySelector('.loading').classList.remove('d-block');
+//         contactForm.querySelector('.error-message').innerHTML = error;
+//         contactForm.querySelector('.error-message').classList.add('d-block');
+//       });
+//   });
+// })();*
+
+// //* Scroll reveal
+
+// const sr = ScrollReveal({
+//   origin: "top",
+//   distance: "60px",
+//   duration: 2500,
+//   delay: 400,
+//   /* reset: true, */
+// });
+
+// sr.reveal(`.hero-title`);
+// sr.reveal(`img-fluid`, { origin: "bottom" });
+// sr.reveal(`.about_data, .skills_data`, { origin: "left" });
+// sr.reveal(`.about_image, .skills_content`, { origin: "right" });
+// sr.reveal(`.services_card, .projects_card`, { interval: 100 });
