@@ -1689,3 +1689,28 @@ footer .credits a {
   box-shadow: 2px 3px 2px 0px grey;
   text-align: center;
 }
+
+.link_code_source,
+.link_site {
+  background-color: #0062d3;
+  border-radius: 10px;
+  padding: 10px;
+  text-decoration: none;
+  color: #ffbc75;
+  border: solid 3px #ffbc75;
+  transition: all 0.4s;
+}
+
+.link_biblio {
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.link_code_source:hover,
+.link_site:hover {
+  background-color: #ffbc75;
+  border: #0062d3 3px solid;
+  transform: scale(1.1);
+}
